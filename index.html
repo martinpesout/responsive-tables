@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Responsive tables</title>
+
+		<link rel="stylesheet" media="all" type="text/css" href="./css/styles.css" />
+	</head>
+
+	<body>
+		<h1>Responsive tables</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Email</th>
+					<th scope="col">Dept, Title</th>
+					<th scope="col">Phone</th>
+				</tr>
+			</thead>
+		  <tbody>
+		    <tr class="vcard">
+					<th scope="row" class="n" data-title="Name">
+						<b class="family-name">Smith</b>,
+						<b class="given-name">Laura</b>
+					</th>
+					<td data-title="Email"><a class="email" href="mailto:laura.smith@domain.com">laura.smith@domain.com</a></td>
+					<td data-title="Dept, Title">						Biology, Director</td>
+					<td class="tel" data-title="Phone">						<a href="tel:+1123456789">123-456-789</a></td>
+				</tr>
+				<tr class="vcard">
+					<th scope="row" class="n" data-title="Name">
+						<b class="family-name">Johnson</b>,
+						<b class="given-name">Ron</b>
+					</th>
+					<td data-title="Email"><a class="email" href="mailto:ron.johnson@domain.com">ron.johnson@domain.com</a></td>
+					<td data-title="Dept, Title">						Purchasing, Director</td>
+				  <td class="tel" data-title="Phone">						<a href="tel:+11234567891">123-456-7891</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>
