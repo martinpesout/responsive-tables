@@ -13,3 +13,5 @@ It is supported by all newest browsers:
 * Chrome 3+
 * Opera 10+
 * Internet Explorer 8+
+
+DEMO: http://demo.martinpesout.cz/responsive-tables/
