@@ -1,7 +1,7 @@
 @import "compass";
 @import "compass/typography/vertical_rhythm";
 
-$break-point: 768px;
+$break-point: 480px;
 $font-family-headers: Tahoma, 'Lucida Grande CE', lucida, sans-serif;
 
 // Baseline, measured in pixels
@@ -120,9 +120,20 @@ table {
 			white-space: normal;
 		}
 	    
-	    // give each row a little space
-		tr {
-			@include trailer;
+		td,
+		th {
+			width: 100%;
+			float: left;
+			clear: both;
+
+			// give each row a little space
+			&:last-child {
+				@include trailer;
+			}
+			// give each row a little space (fix for IE8)
+			&.last-child {
+				@include trailer;
+			}
 		}
 	    
 	    /* Labeling

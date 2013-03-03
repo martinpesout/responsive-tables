@@ -51,7 +51,7 @@ table tbody th {
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   /* line 95, ../scss/styles.scss */
   table {
     border: 0;
@@ -91,20 +91,33 @@ table tbody th {
     white-space: normal;
   }
   /* line 124, ../scss/styles.scss */
-  table tr {
+  table td,
+  table th {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+  /* line 130, ../scss/styles.scss */
+  table td:last-child,
+  table th:last-child {
     margin-bottom: 1.5em;
   }
-  /* line 140, ../scss/styles.scss */
+  /* line 134, ../scss/styles.scss */
+  table td.last-child,
+  table th.last-child {
+    margin-bottom: 1.5em;
+  }
+  /* line 151, ../scss/styles.scss */
   table th[data-title]:before,
   table td[data-title]:before {
     content: attr(data-title) ":\00A0";
     font-weight: bold;
   }
-  /* line 145, ../scss/styles.scss */
+  /* line 156, ../scss/styles.scss */
   table th:not([data-title]) {
     font-weight: bold;
   }
-  /* line 150, ../scss/styles.scss */
+  /* line 161, ../scss/styles.scss */
   table td:empty {
     display: none;
   }
